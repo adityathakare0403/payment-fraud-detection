@@ -1,1 +1,14 @@
-Please put your team's information (e.g. team members name, ub number, email) and topic in this file. (Delete this message after you have done so)
+Data Driven Approach to Payment Fraud Detection
+
+Aditya Ashok Thakare
+50608812
+athakare@buffalo.edu
+
+Onkar Rajendra Ramade
+50604538
+onkarraj@buffalo.edu
+
+Sourabh Madhukar Kodag
+50606796
+skodag@buffalo.edu
+
