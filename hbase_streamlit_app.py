@@ -5,7 +5,7 @@ import happybase
 def get_data_from_hbase():
   try:
     # Establish connection to HBase
-    connection = happybase.Connection('localhost', port=9097)  # Update if using remote machine
+    connection = happybase.Connection('localhost', port=9090)  # Update if using remote machine
     connection.open()
 
     # Connect to the table
