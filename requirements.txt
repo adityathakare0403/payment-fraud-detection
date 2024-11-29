@@ -1,4 +1,5 @@
 streamlit
 happybase
 thrift==0.16.0
-setuptools
+setuptool
+pandas
