@@ -1,10 +1,11 @@
 import streamlit as st
 import happybase
+import pandas as pd
 
 # Function to connect to HBase and get data
 def get_data_from_hbase():
     # Establish connection to HBase
-    connection = happybase.Connection('localhost', port=9090, timeout=30000)  # Update if using remote machine
+    connection = happybase.Connection('localhost', port=9090)  # Update if using remote machine
     connection.open()
 
     # Connect to the table
@@ -30,10 +31,15 @@ def main():
     # Retrieve data from HBase
     data = get_data_from_hbase()
 
-    # Display data in a table
+    # Display data in a pandas DataFrame for better readability
     if data:
         st.write("Showing first 10 rows from fraudulent_transactions table:")
-        st.write(data)  # Displaying the data as a simple DataFrame-like table
+        
+        # Convert list of dictionaries into pandas DataFrame
+        df = pd.DataFrame(data)
+        
+        # Display the DataFrame using Streamlit's `st.dataframe` function
+        st.dataframe(df)
     else:
         st.write("No data found in HBase.")
 
