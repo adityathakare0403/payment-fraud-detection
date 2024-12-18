@@ -3,7 +3,7 @@
 
 Online payment fraud is a growing issue affecting businesses and consumers. Detecting fraudulent transactions is complex due to the large volume and velocity of transaction data. This project proposes a data-driven approach using machine learning and big data technologies. The framework uses Hadoop for storage and processing, HBase for data management, and machine learning models for fraud detection. Tested on a real-life dataset, the system efficiently flags suspicious transactions, offering a toolkit for financial losses reduction and transaction security enhancement.
 
-## Higlights
+## Highlights
 
 🚀 Mapping Fraudulent Activity Across the U.S.
 We visualized fraudulent transaction hotspots on an interactive U.S. map using precise latitude and longitude data. This map highlights concentrated fraudulent activities, especially in and around metro cities, providing valuable insights into geographic fraud trends. The visualization integrates seamlessly into our Streamlit app, offering an intuitive and aesthetically appealing user experience.
