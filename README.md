@@ -98,8 +98,8 @@ ssh localhost
 
 Downloading Hadoop 
 ===============================
-wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
-tar xzf hadoop-3.3.6.tar.gz
+wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz
+tar xzf hadoop-3.4.1.tar.gz
 
 
 Editng 6 important files
@@ -115,7 +115,7 @@ sudo nano .bashrc
 #Add below lines in this file
 
 #Hadoop Related Options
-export HADOOP_HOME=/home/hdoop/hadoop-3.3.6
+export HADOOP_HOME=/home/hdoop/hadoop-3.4.1
 export HADOOP_INSTALL=$HADOOP_HOME
 export HADOOP_MAPRED_HOME=$HADOOP_HOME
 export HADOOP_COMMON_HOME=$HADOOP_HOME
@@ -244,7 +244,7 @@ export PATH=$PATH:$HBASE_HOME/bin
 Then, implement the .bashrc file using the below command:
 source ~/.bashrc
 
-Now, inside the hbase-2.4.9, go to the conf folder, inside that go to
+Now, inside the hbase-2.6.1, go to the conf folder, inside that go to
 hbase-site.xml
 
 <property>
